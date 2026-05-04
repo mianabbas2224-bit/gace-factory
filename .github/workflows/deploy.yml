@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Signal Received
-        run: echo "The GACE Army infrastructure is now ONLINE."
+        run: echo "The GACE Army infrastructure is now ONLINE." 
