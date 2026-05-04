@@ -1,0 +1,11 @@
+name: GACE Army Trigger
+on:
+  repository_dispatch:
+    types: [gace_trigger] # This matches the signal from your PowerShell
+
+jobs:
+  ping_received:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm Signal
+        run: echo "GACE Army Signal Received! The chain is starting."
