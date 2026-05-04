@@ -1,12 +1,12 @@
-name: GACE Army Trigger
+﻿name: GACE_Army_Live
 on:
   repository_dispatch:
     types: [gace_trigger]
-  workflow_dispatch: # <--- ADD THIS LINE (It adds a manual 'Run' button)
+  workflow_dispatch:
 
 jobs:
-  ping_received:
+  activation:
     runs-on: ubuntu-latest
     steps:
-      - name: Confirm Signal
-        run: echo "GACE Army Signal Received!"
+      - name: Signal Received
+        run: echo "The GACE Army infrastructure is now ONLINE."
