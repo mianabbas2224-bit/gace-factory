@@ -1,0 +1,12 @@
+﻿name: GACE_Army_Live
+on:
+  repository_dispatch:
+    types: [gace_trigger]
+  workflow_dispatch:
+
+jobs:
+  activation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Signal Received
+        run: echo "The GACE Army infrastructure is now ONLINE."
